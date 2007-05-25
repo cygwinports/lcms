@@ -4,18 +4,19 @@ Little CMS intends to be a small-footprint, speed optimized color
 management engine in open source form.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   libjpeg62-6b-12
   libtiff5-3.8.2-3
-  python-2.4.3-1
+(python-lcms)
+  python-2.5.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -41,7 +42,7 @@ This will create:
   /usr/src/lcms-1.16-X-src.tar.bz2
   /usr/src/liblcms-devel-1.16-X.tar.bz2
   /usr/src/liblcms1-1.16-X.tar.bz2
-  /usr/src/pylcms-1.16-X.tar.bz2
+  /usr/src/python-lcms-1.16-X.tar.bz2
 
 -------------------------------------------
 
@@ -79,14 +80,17 @@ Files included in the binary packages:
   /usr/lib/liblcms.la
   /usr/lib/pkgconfig/lcms.pc
 
-(pylcms)
-  /usr/lib/python2.4/site-packages/_lcms.dll
-  /usr/lib/python2.4/site-packages/_lcms.la
-  /usr/lib/python2.4/site-packages/lcms.py
+(python-lcms)
+  /usr/lib/python2.5/site-packages/_lcms.dll
+  /usr/lib/python2.5/site-packages/_lcms.la
+  /usr/lib/python2.5/site-packages/lcms.py
 
 ------------------
 
 Port Notes:
+
+----- version 1.16-2 -----
+Rebuilt for python-2.5.
 
 ----- version 1.16-1 -----
 Version bump; last official release was 1.14-1.
