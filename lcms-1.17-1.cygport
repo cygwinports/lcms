@@ -1,0 +1,22 @@
+DESCRIPTION="Little color management engine"
+HOMEPAGE="http://littlecms.com/"
+SRC_URI="http://littlecms.com/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel python-${PN}"
+PKG_HINTS="setup lib devel python"
+PKG_CONTENTS[0]='--exclude=*.dll usr/bin/ usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+PKG_CONTENTS[3]='usr/lib/python*'
+
+DIFF_EXCLUDES="icc34.h"
+
+CYGCONF_ARGS="--with-python"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	insinto /usr/share/${PN}
+	doins "${S}/testbed/*.icm"
+}

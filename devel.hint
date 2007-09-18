@@ -1,5 +1,5 @@
 category: Graphics Libs
-requires: cygwin libjpeg-devel libtiff-devel
+requires: cygwin liblcms1 libjpeg-devel libtiff-devel
 external-source: lcms
 sdesc: "Little color management engine (development)"
 ldesc: "Little CMS intends to be a small-footprint, speed optimized 
