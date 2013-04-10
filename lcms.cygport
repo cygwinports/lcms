@@ -1,0 +1,22 @@
+inherit python
+
+NAME="lcms"
+VERSION=1.19
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="Little color management engine"
+DESCRIPTION="Little CMS intends to be a small-footprint, speed optimized
+color management engine in open source form."
+HOMEPAGE="http://littlecms.com/"
+SRC_URI="http://littlecms.com/lcms-${VERSION}.tar.gz"
+PATCH_URI="1.17-automake-python.patch"
+
+PKG_NAMES="${NAME} liblcms1 liblcms-devel python-lcms"
+lcms_CONTENTS='--exclude=*.dll usr/bin/ usr/share/'
+liblcms1_CONTENTS="usr/bin/cyglcms-1.dll"
+liblcms_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+python_lcms_CONTENTS=${PYTHON_SITELIB#/}
+
+DIFF_EXCLUDES="icc34.h"
+
+CYGCONF_ARGS="--with-python"

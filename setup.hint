@@ -1,5 +1,0 @@
-category: Graphics
-requires: liblcms1 libjpeg62 libtiff5
-sdesc: "Little color management engine (utilities)"
-ldesc: "Little CMS intends to be a small-footprint, speed optimized 
-color management engine in open source form."

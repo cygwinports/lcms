@@ -1,6 +1,0 @@
-category: Graphics Python
-requires: liblcms1 python
-external-source: lcms
-sdesc: "Little color management engine (Python bindings)"
-ldesc: "Little CMS intends to be a small-footprint, speed optimized 
-color management engine in open source form."

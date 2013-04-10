@@ -1,6 +1,0 @@
-category: Graphics Libs
-requires: libjpeg62 libtiff5
-external-source: lcms
-sdesc: "Little color management engine (runtime)"
-ldesc: "Little CMS intends to be a small-footprint, speed optimized 
-color management engine in open source form."
