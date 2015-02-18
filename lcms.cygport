@@ -20,3 +20,12 @@ python_lcms_CONTENTS=${PYTHON_SITELIB#/}
 DIFF_EXCLUDES="icc34.h"
 
 CYGCONF_ARGS="--with-python"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	insinto /usr/share/${NAME}
+	doins ${S}/testbed/sRGBSpac.icm
+	cp "${S}/testbed/sRGB Color Space Profile.icm" ${D}/usr/share/${NAME}/
+}
