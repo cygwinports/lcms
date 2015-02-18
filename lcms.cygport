@@ -2,7 +2,7 @@ inherit python
 
 NAME="lcms"
 VERSION=1.19
-RELEASE=1
+RELEASE=3
 CATEGORY="Graphics"
 SUMMARY="Little color management engine"
 DESCRIPTION="Little CMS intends to be a small-footprint, speed optimized
